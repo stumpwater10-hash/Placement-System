@@ -19,6 +19,13 @@ frktest = [{ name = "itsfrank/frktest", version = "^0.0.4", index = "https://git
 luau-lsp = [{ name = "pesde/luau_lsp", version = "=1.66.1", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
 stylua = [{ name = "pesde/stylua", version = "=2.4.1", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
 
+[graph."centau/vide@0.4.0 roblox"]
+direct = ["vide", { name = "centau/vide", version = "^0.4.0", index = "default" }, "standard"]
+
+[graph."centau/vide@0.4.0 roblox".pkg_ref]
+ref_ty = "pesde"
+index_url = "https://github.com/pesde-pkg/index"
+
 [graph."jiwonz/dirs@0.6.0 lune".dependencies]
 greentea = ["jiwonz/greentea_luau@0.2.0 luau", "standard"]
 pathfs = ["jiwonz/pathfs@0.6.0 lune", "standard"]
